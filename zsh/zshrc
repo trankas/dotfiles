@@ -83,3 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#mintty solarized
+source $DOTFILES/mintty/mintty-colors-solarized/sol.dark
+export DISPLAY=:0.0
