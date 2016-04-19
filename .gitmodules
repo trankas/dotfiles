@@ -1,3 +1,6 @@
 [submodule "mintty/mintty-colors-solarized"]
 	path = mintty/mintty-colors-solarized
 	url = https://github.com/mavnn/mintty-colors-solarized.git
+[submodule "zsh/oh-my-zsh"]
+	path = zsh/oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
