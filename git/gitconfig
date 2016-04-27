@@ -2,7 +2,7 @@
 	autocrlf = true
 	pager = less -r
 [user]
-	email = joao.lestevao@parceiros.nos.pt
+	email = <<>>
 	name = Joao Estevao
 [push]
 	default = simple
