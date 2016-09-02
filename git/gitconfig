@@ -30,4 +30,11 @@
   get-patch = format-patch -1
   undo-commit-file = "!f() { git checkout $1 -- $2; }; f"
   find-files ="!f() { git ls-files | grep "$1"; }; f"
-
+  undo-local-changes = checkout
+  export-zip-from-commit = "!f() { git archive --format zip --output $1 $2; }; f"
+  export-file-at-commit = "!f() { git show $2:$1; }; f"
+  list-branches = branch -a
+  list-branches-date = "!f() { for branch in `git branch -r | grep -v HEAD`;do echo -e `git show --format=\"%ci %cr\" $branch | head -n 1` \t$branch; done | sort -r; }; f"
+  list-branches-date2 = for-each-ref --format='%(committerdate:iso8601) %(committerdate:relative) %(refname)' --sort -committerdate
+  rank = shortlog -sn --no-merges
+  sumlog = log --summary
